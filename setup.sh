@@ -5,6 +5,7 @@ read -p "This will reset all your present Sticky Notes.Make sure you have backup
 echo
 if [[ $REPLY =~ ^[Yy]$ ]]
 then
+command -v indicator-stickynotes >/dev/null 2>&1 || { echo "This is an extension for indicator-stickynotes, please install it and retry.Aborting." >&2; exit 1; }
 echo "Installing System Icons..."
 sudo cp 'indicator-stickynotes-dark.png' '/usr/share/icons/ubuntu-mono-dark/48x48/apps'
 sudo cp 'indicator-stickynotes-light.png' '/usr/share/icons/ubuntu-mono-light/48x48/apps'
