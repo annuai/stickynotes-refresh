@@ -16,8 +16,7 @@ sudo chmod 777 "/home/$USER/.config/indicator-stickynotes"
 echo "Successfully Installed"
 echo "The refresh was created by Annu"
 echo "http://annu.co"
-else
+fi
 echo "Well, thats your choice"
 echo "The refresh was created by Annu"
 echo "http://annu.co"
-fi
