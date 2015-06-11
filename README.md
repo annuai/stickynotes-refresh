@@ -6,5 +6,7 @@ Stickynotes is a really cool idea on the desktop.But still, on Linux - it looked
 
 **NB:**You need indicator-stickynotes app by Umang Kumar installed from his PPA for this patch to work.<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Be careful, the Bash Script resets your data, be sure you have backups of your notes.
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[Read the original article...](http://annu.co/blog/2015/06/11/Stickynotes-refreshed.html)
 
 [Annu.co](http://annu.co)
