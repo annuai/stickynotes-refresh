@@ -7,10 +7,10 @@ if [[ $REPLY =~ ^[Yy]$ ]]
 then
 command -v indicator-stickynotes >/dev/null 2>&1 || { echo "This is an extension for indicator-stickynotes, please install it and retry.Aborting." >&2; exit 1; }
 echo "Installing System Icons..."
-sudo cp 'indicator-stickynotes-dark.png' '/usr/share/icons/ubuntu-mono-dark/48x48/apps'
-sudo cp 'indicator-stickynotes-light.png' '/usr/share/icons/ubuntu-mono-light/48x48/apps'
+sudo cp 'Icons/Logo/Dark/indicator-stickynotes.png' '/usr/share/icons/ubuntu-mono-dark/48x48/apps'
+sudo cp 'Icons/Logo/Light/indicator-stickynotes.png' '/usr/share/icons/ubuntu-mono-light/48x48/apps'
 echo "Installing UI Icons..."
-sudo cp -R 'Icons' '/usr/share/indicator-stickynotes'
+sudo cp -R 'Icons/Icons' '/usr/share/indicator-stickynotes'
 echo "Changing Interface Files"
 sudo cp 'StickyNotes.glade' '/usr/share/indicator-stickynotes'
 echo "Changing Fonts..."
