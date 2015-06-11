@@ -1,0 +1,10 @@
+[Desktop Entry]
+Type=Application
+Exec=indicator-stickynotes
+Hidden=false
+NoDisplay=false
+X-GNOME-Autostart-enabled=true
+Name[en_IN]=Stickynotes
+Name=Stickynotes
+Comment[en_IN]=Stickynotes Indicator applet
+Comment=Stickynotes Indicator applet

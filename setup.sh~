@@ -5,18 +5,26 @@ read -p "This will reset all your present Sticky Notes.Make sure you have backup
 echo
 if [[ $REPLY =~ ^[Yy]$ ]]
 then
+echo "Installing System Icons..."
 sudo cp 'indicator-stickynotes-dark.png' '/usr/share/icons/ubuntu-mono-dark/48x48/apps'
 sudo cp 'indicator-stickynotes-light.png' '/usr/share/icons/ubuntu-mono-light/48x48/apps'
+echo "Installing UI Icons..."
 sudo cp -R 'Icons' '/usr/share/indicator-stickynotes'
+echo "Changing Interface Files"
 sudo cp 'StickyNotes.glade' '/usr/share/indicator-stickynotes'
+echo "Changing Fonts..."
 sudo cp 'Segoe-Script.ttf' "/home/$USER/.local/share/fonts/"
 sudo chmod 777 "/home/$USER/.local/share/fonts/Segoe-Script.ttf"
+echo "Configuring..."
 sudo cp 'indicator-stickynotes' "/home/$USER/.config/"
 sudo chmod 777 "/home/$USER/.config/indicator-stickynotes"
+sudo cp 'indicator-stickynotes.desktop' "/home/$USER/.config/autostart/"
+sudo chmod 777 "/home/$USER/.config/autostart/indicator-stickynotes.desktop"
 echo "Successfully Installed"
 echo "The refresh was created by Annu"
 echo "http://annu.co"
-fi
+else
 echo "Well, thats your choice"
 echo "The refresh was created by Annu"
 echo "http://annu.co"
+fi
